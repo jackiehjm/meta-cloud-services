@@ -10,7 +10,7 @@ SRC_URI[sha256sum] = "ab50fbb4717c74e32915123f4150805b463e81de1d58e43996fd813b26
 inherit setuptools pypi
 
 DEPENDS += "\
-    python-pbr \
+    python-pbr-native \
     "
 
 # Satisfy setup.py 'setup_requires'

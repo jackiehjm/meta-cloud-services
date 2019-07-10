@@ -234,7 +234,7 @@ FILES_${SRCNAME}-setup = " \
 
 
 DEPENDS += " \
-    python-pbr \
+    python-pbr-native \
     python-pip \
     "
 

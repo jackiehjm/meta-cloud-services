@@ -15,7 +15,7 @@ S = "${WORKDIR}/git"
 inherit setuptools
 
 DEPENDS += " \
-        python-pbr \
+        python-pbr-native \
         "
 # Satisfy setup.py 'setup_requires'
 DEPENDS += " \

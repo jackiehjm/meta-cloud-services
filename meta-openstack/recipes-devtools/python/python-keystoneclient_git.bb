@@ -21,7 +21,7 @@ FILES_${PN}-doc += "${datadir}/keystoneclient"
 
 DEPENDS += " \
         python-pip \
-        python-pbr \
+        python-pbr-native \
         "
 
 # Satisfy setup.py 'setup_requires'

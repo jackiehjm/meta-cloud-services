@@ -18,7 +18,7 @@ inherit setuptools
 DEPENDS += " \
         gmp \
         python-pip \
-        python-pbr \
+        python-pbr-native \
         "
 
 RDEPENDS_${PN} = " \

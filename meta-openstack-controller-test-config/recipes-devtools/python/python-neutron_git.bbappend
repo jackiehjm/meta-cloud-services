@@ -7,7 +7,7 @@ NEUTRON_CONF_EXT_ETH_IF ?= "eth0"
 do_install_append() {
     sed -e "s:%NEUTRON_CONF_EXT_ETH_IF%:${NEUTRON_CONF_EXT_ETH_IF}:g" -i ${WORKDIR}/neutron-test-config.init
     sed -e "s:%CONTROLLER_IP%:${CONTROLLER_IP}:g" -i ${WORKDIR}/neutron-test-config.init
-    install -m 0755 ${WORKDIR}/neutron-test-config.init ${D}${sysconfdir}/init.d/neutron-test-config
+    install -D -m 0755 ${WORKDIR}/neutron-test-config.init ${D}${sysconfdir}/init.d/neutron-test-config
 }
 
 PACKAGES += " ${SRCNAME}-test-config"

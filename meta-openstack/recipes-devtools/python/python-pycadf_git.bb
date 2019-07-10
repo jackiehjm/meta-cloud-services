@@ -18,7 +18,7 @@ FILES_${PN} += "${datadir}/etc/${SRCNAME}/*"
 
 DEPENDS += " \
         python-pip \
-        python-pbr \
+        python-pbr-native \
         "
 # Satisfy setup.py 'setup_requires'
 DEPENDS += " \

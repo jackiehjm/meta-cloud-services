@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=9edbbf5857ab51214ef0e8b79069bb07"
 
 DEPENDS += " \
         python-pip \
-        python-pbr \
+        python-pbr-native \
         "
 
 # Satisfy setup.py 'setup_requires'

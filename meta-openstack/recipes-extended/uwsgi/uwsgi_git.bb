@@ -16,6 +16,7 @@ S = "${WORKDIR}/git"
 
 inherit setuptools pkgconfig
 
+CFLAGS += " -Wno-cast-function-type"
 # prevent host contamination and remove local search paths
 export UWSGI_REMOVE_INCLUDES = "/usr/include,/usr/local/include"
 

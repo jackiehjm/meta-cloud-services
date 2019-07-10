@@ -11,7 +11,7 @@ inherit distutils pypi
 
 DEPENDS += " \
         python-pip \
-        python-pbr \
+        python-pbr-native \
         "
 
 RDEPENDS_${PN} += " \

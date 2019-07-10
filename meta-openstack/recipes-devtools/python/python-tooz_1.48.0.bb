@@ -13,7 +13,7 @@ inherit setuptools pypi
 
 DEPENDS += " \
         python-pip \
-        python-pbr \
+        python-pbr-native \
         "
 
 # RDEPENDS_default:
