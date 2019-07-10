@@ -16,7 +16,7 @@ inherit setuptools
 DEPENDS += " \
         python-pip \
         python-babel \
-        python-pbr \
+        python-pbr-native \
         "
 
 # Satisfy setup.py 'setup_requires'

@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=1dece7821bf3fd70fe1309eaa37d52a2"
 
 DEPENDS += " \
         python-pip \
-        python-pbr \
+        python-pbr-native \
         "
 
 RDEPENDS_${PN} += " \
@@ -158,13 +158,9 @@ do_install_append() {
     ln -fs openstack_dashboard/static ${DASHBOARD_SHARE_DIR}/static
 }
 
-pkg_postinst_${SRCNAME} () {
-    if [ -n "$D" ]; then
-        exit 1
-    else
-        # Regenerate the django static files
-        sudo -u horizon /usr/bin/env python ${datadir}/openstack-dashboard/manage.py collectstatic --noinput --clear 
-    fi
+pkg_postinst_ontarget_${PN} () {
+    # Regenerate the django static files
+     sudo -u horizon /usr/bin/env python ${datadir}/openstack-dashboard/manage.py collectstatic --noinput --clear 
 }
 
 PACKAGES += "${SRCNAME}-tests ${SRCNAME} ${SRCNAME}-apache ${SRCNAME}-standalone"

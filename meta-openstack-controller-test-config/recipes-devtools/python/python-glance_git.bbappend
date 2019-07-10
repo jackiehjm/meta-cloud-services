@@ -3,7 +3,7 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 SRC_URI += " file://glance-test-config.init"
 
 do_install_append() {
-    install -m 0755 ${WORKDIR}/glance-test-config.init ${D}${sysconfdir}/init.d/glance-test-config
+    install -D -m 0755 ${WORKDIR}/glance-test-config.init ${D}${sysconfdir}/init.d/glance-test-config
 }
 
 PACKAGES += " ${SRCNAME}-test-config"

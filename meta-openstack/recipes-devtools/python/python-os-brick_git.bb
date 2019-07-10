@@ -17,7 +17,7 @@ inherit setuptools
 FILES_${PN} += "${datadir}/etc/*"
 
 DEPENDS += " \
-        python-pbr \
+        python-pbr-native \
         "
 
 RDEPENDS_${PN} += " \

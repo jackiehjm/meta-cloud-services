@@ -6,16 +6,16 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 inherit packagegroup
 
+# postgresql-setup 
 RDEPENDS_${PN} = " \
     cloud-init \
-    postgresql-setup \
     postgresql \
     qemu \
     libvirt \
     libvirt-libvirtd \
     libvirt-virsh \
     nova-compute \
-    ceilometer-compute \
+    ${@bb.utils.contains('DISTRO_FEATURES', 'sysvinit', 'ceilometer-compute', '', d)} \
     python-novaclient \
     neutron-plugin-openvswitch \
     openvswitch-switch \

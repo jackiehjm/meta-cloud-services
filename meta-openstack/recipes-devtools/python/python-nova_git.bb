@@ -262,7 +262,7 @@ FILES_${SRCNAME}-controller = "${bindir}/* \
 
 DEPENDS += " \
         python-pip \
-        python-pbr \
+        python-pbr-native \
         "
 
 RDEPENDS_${PN} += " \

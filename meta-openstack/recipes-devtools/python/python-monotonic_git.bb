@@ -15,7 +15,7 @@ S = "${WORKDIR}/git"
 inherit distutils
 
 DEPENDS += " \
-        python-pbr \
+        python-pbr-native \
         "
 
 RDEPENDS_${PN} += " \

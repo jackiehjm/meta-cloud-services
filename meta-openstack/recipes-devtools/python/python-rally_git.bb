@@ -97,7 +97,7 @@ FILES_${SRCNAME}-api = "${bindir}/rally-api \
 
 DEPENDS += " \
     python-pip \
-    python-pbr \
+    python-pbr-native \
     "
 
 RDEPENDS_${PN} += " python-babel \

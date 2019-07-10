@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=34400b68072d710fecd0a2940a0d1658"
 DEPENDS += " \
         gmp \
         python-pip \
-        python-pbr \
+        python-pbr-native \
         "
 
 SRCREV = "13b25ff1fed908cfe7b4e719a97efd7121e3be96"

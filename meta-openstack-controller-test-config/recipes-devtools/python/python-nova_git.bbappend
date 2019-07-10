@@ -3,7 +3,7 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 SRC_URI += " file://nova-test-config.init"
 
 do_install_append() {
-    install -m 0755 ${WORKDIR}/nova-test-config.init ${D}${sysconfdir}/init.d/nova-test-config
+    install -D -m 0755 ${WORKDIR}/nova-test-config.init ${D}${sysconfdir}/init.d/nova-test-config
 }
 
 PACKAGES += " ${SRCNAME}-test-config"

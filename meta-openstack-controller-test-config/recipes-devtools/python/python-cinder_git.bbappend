@@ -8,7 +8,7 @@ do_install_prepend() {
 }
 
 do_install_append() {
-    install -m 0755 ${WORKDIR}/cinder-test-config.init ${D}${sysconfdir}/init.d/cinder-test-config
+    install -D -m 0755 ${WORKDIR}/cinder-test-config.init ${D}${sysconfdir}/init.d/cinder-test-config
 }
 
 PACKAGES += " ${SRCNAME}-test-config"

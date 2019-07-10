@@ -93,7 +93,7 @@ pkg_postinst_${SRCNAME}-setup () {
 
 DEPENDS += " \
         python-pip \
-        python-pbr \
+        python-pbr-native \
         "
 
 RDEPENDS_${SRCNAME} = "${PN} \

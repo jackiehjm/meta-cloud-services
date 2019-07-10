@@ -16,7 +16,7 @@ S = "${WORKDIR}/git"
 inherit setuptools
 
 DEPENDS += " \
-	python-pbr \
+	python-pbr-native \
 	"
 
 RDEPENDS_${PN} += " \

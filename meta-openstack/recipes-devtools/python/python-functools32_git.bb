@@ -21,7 +21,7 @@ DISTUTILS_INSTALL_ARGS = "--root=${D} \
     --install-data=${datadir}"
 
 DEPENDS += " \
-	python-pbr \
+	python-pbr-native \
 	"
 
 RDEPENDS_${PN} += "python-testtools \
