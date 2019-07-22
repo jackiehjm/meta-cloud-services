@@ -11,4 +11,4 @@ SRC_URI[sha256sum] = "ac2b4dc17e6edfb804b09ade15df79f251522e442976ea0c8ea0051474
 
 inherit setuptools pypi
 
-DEPENDS += " python-hgtools"
+DEPENDS += " python-hgtools-native"
